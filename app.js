@@ -12,7 +12,7 @@ app.use(express.json())
 app.use('/identify', identifyRoute);
 
 app.get('/', (req, res) => {
-  res.send("Hi Bitch")
+  res.send("Hello")
 });
 
 mongoose.connect(process.env.MONGO_URI, {

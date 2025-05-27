@@ -12,7 +12,7 @@ app.use(express.json())
 app.use('/identify', identifyRoute);
 
 app.get('/', (req, res) => {
-  res.send("Hello")
+   res.send('POST to /identify with JSON body containing email or phoneNumber');
 });
 
 mongoose.connect(process.env.MONGO_URI, {
